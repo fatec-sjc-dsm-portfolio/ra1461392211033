@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.titulo,
+.p2,
+.p-left,
+.p-right{
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+.caixa{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 10vh;
+}
+.logo{
+    font-size: 14vh;      
+    padding-bottom: 4vh;
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+.logo::after{
+    content: '|';
+    opacity: 0;
+    animation: pisca .7s;
+}
+@keyframes pisca {
+    0%,
+    100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.titulo{
+    font-size: 12vh;      
+    padding: 0vh 0 6vh 0;
+}
+.p2{
+    text-align: center;
+    text-decoration: none;
+    font-size: 8vh; 
+    position:relative;
+}
+.p2:hover{
+    font-size: 9vh; 
+}
+.dimension{
+    height: 11vh;
+}
+.p-left{
+    float: left;
+    font-size: 4vh;
+    margin: 3vh 6vw 0 6vw;
+}
+.p-right{
+    float: right;
+    font-size: 150%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.img{
+    float: right;
+    margin-right: 10vw;
+    width: 30vw;
+    padding: 1%;
+    border-style: dashed;
+    border-color: white;
+}
+.voltar{
+    display: flex;
+    justify-content: flex-start;
+    padding: 3vh 0 0 3vh;
+}
+.img_voltar{
+    width: 20vh;
+}
+.logo_img{
+    width: 30vh;
+}
+.div_logo{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .img{
+        float: none;
+        margin: 0 0 10vh 0;
+        width: 40vw;
+    }
+    .res{
+        display: flex;
+        justify-content: center;
+    }
+    .logo_img{
+        width: 25vh;
+    }
+    .logo{
+        font-size: 10vh;     
+    }
+    .p2{
+        font-size: 7vh;
+    }
+    .p2:hover{
+        font-size: 8vh; 
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img{
+        width: 60vw;
+    }
+    .img_voltar{
+        width: 90px;
+    }
+    .titulo{
+        font-size: 9vh;
+    }
+    .p-left{
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .img{
+        width: 280px;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .p-left{
+        font-size: 17px;
+    }
+}

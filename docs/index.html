@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h2>Carlos Eduardo Falandes</h2>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <title>Eduardo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+        <link rel="shortcut icon" href="../static/imgs/favicon.ico" type="image/x-icon">
+    </head>
+    <body background="./static/imgs/ceuzinho.gif">
+        <div>
+            <div class="caixa">
+                <div class="div_logo">
+                    <img class="logo_img" src="https://github.com/Desduh/Portfolio/blob/main/src/api/static/imgs/meteoro.gif?raw=true">
+                </div>
+                <b class="logo"> Dunha</b>
+            </div>
+            <div class="dimension">
+                <a class="p2" href="./templates/sobre_mim.html">Sobre mim</a><br>
+            </div>
+            <div class="dimension">
+                <a class="p2" href="./templates/profissional.html">Profissional</a><br>
+            </div>
+            <div class="dimension">
+                <a class="p2" href="./templates/passatempo.html">Passatempo</a><br>
+            </div>
+        </div>
+        <script>
+            function typeWrite(elemento){
+                const texto = elemento.innerHTML.split('');
+                elemento.innerHTML = '';
+                texto.forEach((letra, i) => {
+                    setTimeout(function() {
+                        elemento.innerHTML += letra;
+                    }, 120 * i)
+                });
+            }
+            const titlo = document.querySelector('.logo');
+            typeWrite(titlo)
+        </script>
+    </body>
 </html>
