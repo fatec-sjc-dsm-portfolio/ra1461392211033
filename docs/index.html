@@ -1,42 +1,277 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Eduardo</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./static/css/style.css">
-        <link rel="shortcut icon" href="../static/imgs/favicon.ico" type="image/x-icon">
-    </head>
-    <body background="./static/imgs/ceuzinho.gif">
-        <div>
-            <div class="caixa">
-                <div class="div_logo">
-                    <img class="logo_img" src="https://github.com/Desduh/Portfolio/blob/main/src/api/static/imgs/meteoro.gif?raw=true">
+
+<head>
+    <title>Falandes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <link rel="shortcut icon" href="./static/imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body background="./static/imgs/ceuzinho.gif">
+    <header>
+        <nav class="nav-links">
+            <a class="left-link" href="#inicio">Falandes</a>
+            <div class="right-links">
+                <a href="#formacao">Formação</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#publicacoes">Publicações</a>
+                <a href="#complementar">Complementar</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="gradient-overlay"></div>
+        <div class="center-text">
+            <h1>Carlos Eduardo Falandes</h1>
+            <p class="text-effect">Transformando ideias em ciência e ciência em soluções inovadoras</p>
+        </div>
+        <a href="#resumo" class="container-seta">
+            <p id="titleProj">Resumo</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+    </section>
+
+    <section id="resumo" class="section">
+        <h2>Resumo</h2>
+        <div class="centralizar">
+            <div class="resumo-content">
+                <div class="resumo-foto">
+                    <img src="./static/imgs/eduardo.png" alt="Foto de Carlos Eduardo Falandes">
                 </div>
-                <b class="logo"> Dunha</b>
-            </div>
-            <div class="dimension">
-                <a class="p2" href="./templates/sobre_mim.html">Sobre mim</a><br>
-            </div>
-            <div class="dimension">
-                <a class="p2" href="./templates/profissional.html">Profissional</a><br>
-            </div>
-            <div class="dimension">
-                <a class="p2" href="./templates/passatempo.html">Passatempo</a><br>
+                <div class="resumo-texto">
+                    <p>
+                        Sou graduado em Desenvolvimento de Software pela FATEC e atualmente curso o mestrado em
+                        Computação
+                        Aplicada no INPE. Atuo como Analista C&T no projeto Queimadas, onde desenvolvo soluções
+                        tecnológicas
+                        inovadoras para monitoramento ambiental.
+                    </p>
+                    <br>
+                    <p>
+                        Tenho ampla experiência no desenvolvimento de produtos tecnológicos e pesquisa científica,
+                        sempre
+                        buscando transformar ideias em ferramentas que gerem impacto positivo. Sou apaixonado por
+                        ciência,
+                        especialmente nas áreas de computação, astronomia e meio ambiente, acreditando no poder da
+                        tecnologia como agente de transformação para um futuro sustentável e inovador.
+                    </p>
+                    <br>
+                    <p>
+                        Minha trajetória é guiada pelo propósito de aliar ciência aplicada e inovação, criando soluções
+                        práticas que gerem resultados concretos e impactem vidas.
+                    </p>
+                </div>
             </div>
         </div>
-        <script>
-            function typeWrite(elemento){
-                const texto = elemento.innerHTML.split('');
-                elemento.innerHTML = '';
-                texto.forEach((letra, i) => {
-                    setTimeout(function() {
-                        elemento.innerHTML += letra;
-                    }, 120 * i)
-                });
-            }
-            const titlo = document.querySelector('.logo');
-            typeWrite(titlo)
-        </script>
-    </body>
+    </section>
+
+
+    <section id="formacao" class="section">
+        <h2>Formação</h2>
+        <div class="centralizar">
+            <div class="formacao-detalhes">
+                <div class="formacao-item">
+                    <h3>Técnico em Edificações</h3>
+                    <p><strong>Instituição:</strong> CEPHAS</p>
+                    <p><strong>Período:</strong> 2020 - 2021</p>
+                    <p><strong>Título:</strong> Construções Sustentáveis</p>
+                    <div class="formacao-imagem">
+                        <img src="imagem-tecnico.jpg" alt="Imagem Técnico em Edificações">
+                    </div>
+                </div>
+                <div class="formacao-item">
+                    <h3>Graduação em Desenvolvimento de Software</h3>
+                    <p><strong>Instituição:</strong> FATEC São José dos Campos</p>
+                    <p><strong>Período:</strong> 2022 - 2024</p>
+                    <p><strong>Título:</strong> Processamento de Imagens e Visão Computacional</p>
+                    <div class="formacao-imagem">
+                        <img src="imagem-graduacao.jpg" alt="Imagem Graduação">
+                    </div>
+                </div>
+                <div class="formacao-item">
+                    <h3>Mestrando em Computação Aplicada</h3>
+                    <p><strong>Instituição:</strong> INPE-DE</p>
+                    <p><strong>Período:</strong> 2025 - 2026</p>
+                    <p><strong>Título:</strong> Processamento de Sinais para Radioastronomia</p>
+                    <div class="formacao-imagem">
+                        <img src="imagem-mestrado.jpg" alt="Imagem Mestrado">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <h2>Projetos</h2>
+        <div class="centralizar">
+            <p>Lista de projetos inovadores desenvolvidos ao longo da carreira.</p>
+            <div class="carrossel">
+                <div class="projeto-card" data-descricao="Descrição do Projeto 1">
+                    <div class="projeto-imagem" style="background-image: url('projeto1.jpg');"></div>
+                    <h3>Projeto 1</h3>
+                </div>
+                <div class="projeto-card" data-descricao="Descrição do Projeto 2">
+                    <div class="projeto-imagem" style="background-image: url('projeto2.jpg');"></div>
+                    <h3>Projeto 2</h3>
+                </div>
+                <div class="projeto-card" data-descricao="Descrição do Projeto 3">
+                    <div class="projeto-imagem" style="background-image: url('projeto3.jpg');"></div>
+                    <h3>Projeto 3</h3>
+                </div>
+                <div class="projeto-card" data-descricao="Descrição do Projeto 4">
+                    <div class="projeto-imagem" style="background-image: url('projeto4.jpg');"></div>
+                    <h3>Projeto 4</h3>
+                </div>
+            </div>
+            <div class="descricao-projeto">
+                <p>Clique em um projeto para ver os detalhes.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="publicacoes" class="section">
+        <h2>Publicações</h2>
+        <div class="centralizar">
+            <p>Detalhes sobre artigos, livros e outras contribuições científicas.</p>
+            <div class="carrossel">
+                <div class="publicacao-card" data-descricao="Descrição da Publicação 1">
+                    <div class="publicacao-imagem" style="background-image: url('publicacao1.jpg');"></div>
+                    <h3>Publicação 1</h3>
+                </div>
+                <div class="publicacao-card" data-descricao="Descrição da Publicação 2">
+                    <div class="publicacao-imagem" style="background-image: url('publicacao2.jpg');"></div>
+                    <h3>Publicação 2</h3>
+                </div>
+                <div class="publicacao-card" data-descricao="Descrição da Publicação 3">
+                    <div class="publicacao-imagem" style="background-image: url('publicacao3.jpg');"></div>
+                    <h3>Publicação 3</h3>
+                </div>
+                <!-- Adicione mais publicações conforme necessário -->
+            </div>
+            <div class="descricao-publicacao">
+                <p>Clique em uma publicação para ver os detalhes.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="complementar" class="section">
+        <h2>Atividades Complementares</h2>
+        <div class="centralizar">
+            <p>Outras iniciativas e contribuições importantes.</p>
+            <div class="complementar-container">
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <img src="curso1-icon.png" alt="Ícone Curso 1">
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Curso de Desenvolvimento Web</h3>
+                        <p>Aprendizado intensivo sobre HTML, CSS, JavaScript e frameworks modernos.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <img src="premio-icon.png" alt="Ícone Premiação">
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Premiação em Inovação</h3>
+                        <p>Reconhecimento pelo desenvolvimento de uma solução sustentável para edificações.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <img src="curso2-icon.png" alt="Ícone Curso 2">
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Curso de Machine Learning</h3>
+                        <p>Estudo prático de algoritmos de aprendizado supervisionado e não supervisionado.</p>
+                    </div>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <div class="centralizar">
+            <p>Entre em contato ou acesse mais sobre meu trabalho:</p>
+            <div class="contato-container">
+                <div class="contato-item">
+                    <div class="contato-icone">
+                        <img src="email-icon.png" alt="Ícone de Email">
+                    </div>
+                    <p><a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+                </div>
+                <div class="contato-item">
+                    <div class="contato-icone">
+                        <img src="github-icon.png" alt="Ícone do GitHub">
+                    </div>
+                    <p><a href="https://github.com/seuperfil" target="_blank">github.com/seuperfil</a></p>
+                </div>
+                <div class="contato-item">
+                    <div class="contato-icone">
+                        <img src="instagram-icon.png" alt="Ícone do Instagram">
+                    </div>
+                    <p><a href="https://instagram.com/seuperfil" target="_blank">@seuperfil</a></p>
+                </div>
+                <div class="contato-item">
+                    <div class="contato-icone">
+                        <img src="lattes-icon.png" alt="Ícone do Lattes">
+                    </div>
+                    <p><a href="http://lattes.cnpq.br/seulattes" target="_blank">Currículo Lattes</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function typeWrite(elemento) {
+            const texto = elemento.textContent;
+            elemento.textContent = '';
+            const letras = texto.split('');
+            letras.forEach((letra, i) => {
+                setTimeout(() => {
+                    elemento.textContent += letra;
+
+                    if (i === letras.length - 1) {
+                        setTimeout(() => {
+                            elemento.style.animation = 'none';
+                            elemento.style.borderRight = 'none';
+                        }, 500);
+                    }
+                }, 80 * i);
+            });
+        }
+
+        const titulo = document.querySelector('.text-effect');
+        typeWrite(titulo);
+
+        document.querySelectorAll('.projeto-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const descricao = card.getAttribute('data-descricao');
+                const descricaoDiv = document.querySelector('.descricao-projeto');
+                descricaoDiv.innerHTML = `<p>${descricao}</p>`;
+            });
+        });
+
+        document.querySelectorAll('.publicacao-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const descricao = card.getAttribute('data-descricao');
+                const descricaoDiv = document.querySelector('.descricao-publicacao');
+                descricaoDiv.innerHTML = `<p>${descricao}</p>`;
+            });
+        });
+    </script>
+</body>
+
 </html>
