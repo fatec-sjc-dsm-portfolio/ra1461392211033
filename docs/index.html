@@ -9,12 +9,24 @@
     <link rel="shortcut icon" href="./static/imgs/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body background="./static/imgs/ceuzinho.gif">
     <header>
         <nav class="nav-links">
             <a class="left-link" href="#inicio">Falandes</a>
+            <!-- Ícone do menu hambúrguer -->
+            <i class="menu-icon fa-solid fa-bars"></i>
+            <!-- Menu dropdown -->
+            <div class="menu-dropdown">
+                <a href="#formacao">Formação</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#publicacoes">Publicações</a>
+                <a href="#complementar">Complementar</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <!-- Links principais -->
             <div class="right-links">
                 <a href="#formacao">Formação</a>
                 <a href="#projetos">Projetos</a>
@@ -77,30 +89,37 @@
         <div class="centralizar">
             <div class="formacao-detalhes">
                 <div class="formacao-item">
-                    <h3>Técnico em Edificações</h3>
-                    <p><strong>Instituição:</strong> CEPHAS</p>
-                    <p><strong>Período:</strong> 2020 - 2021</p>
-                    <p><strong>Título:</strong> Construções Sustentáveis</p>
+                    <div>
+                        <h3>Técnico em Edificações</h3>
+                        <p><strong>Instituição:</strong> CEPHAS</p>
+                        <p><strong>Período:</strong> 2020 - 2021</p>
+                        <p><strong>Título:</strong> Construções Sustentáveis: Inovações em Telhados</p>
+                    </div>
                     <div class="formacao-imagem">
-                        <img src="imagem-tecnico.jpg" alt="Imagem Técnico em Edificações">
+                        <img src="static/imgs/imagem_tecnico.jpg" alt="Imagem Técnico em Edificações">
                     </div>
                 </div>
                 <div class="formacao-item">
-                    <h3>Graduação em Desenvolvimento de Software</h3>
-                    <p><strong>Instituição:</strong> FATEC São José dos Campos</p>
-                    <p><strong>Período:</strong> 2022 - 2024</p>
-                    <p><strong>Título:</strong> Processamento de Imagens e Visão Computacional</p>
+                    <div>
+                        <h3>Graduação em Desenvolvimento de Software</h3>
+                        <p><strong>Instituição:</strong> FATEC São José dos Campos</p>
+                        <p><strong>Período:</strong> 2022 - 2024</p>
+                        <p><strong>Título:</strong> Processamento de Imagens e Visão Computacional</p>
+                    </div>
                     <div class="formacao-imagem">
-                        <img src="imagem-graduacao.jpg" alt="Imagem Graduação">
+                        <img src="static/imgs/visao_computacional.png" alt="Imagem Graduação">
                     </div>
                 </div>
                 <div class="formacao-item">
-                    <h3>Mestrando em Computação Aplicada</h3>
-                    <p><strong>Instituição:</strong> INPE-DE</p>
-                    <p><strong>Período:</strong> 2025 - 2026</p>
-                    <p><strong>Título:</strong> Processamento de Sinais para Radioastronomia</p>
+
+                    <div>
+                        <h3>Mestrando em Computação Aplicada</h3>
+                        <p><strong>Instituição:</strong> INPE-DE</p>
+                        <p><strong>Período:</strong> 2025 - 2026</p>
+                        <p><strong>Título:</strong> Processamento de Sinais de Radioastronomia</p>
+                    </div>
                     <div class="formacao-imagem">
-                        <img src="imagem-mestrado.jpg" alt="Imagem Mestrado">
+                        <img src="static/imgs/radiobservatorio.jpg" alt="Imagem Mestrado">
                     </div>
                 </div>
             </div>
@@ -109,58 +128,229 @@
 
     <section id="projetos" class="section">
         <h2>Projetos</h2>
-        <div class="centralizar">
-            <p>Lista de projetos inovadores desenvolvidos ao longo da carreira.</p>
-            <div class="carrossel">
-                <div class="projeto-card" data-descricao="Descrição do Projeto 1">
-                    <div class="projeto-imagem" style="background-image: url('projeto1.jpg');"></div>
-                    <h3>Projeto 1</h3>
-                </div>
-                <div class="projeto-card" data-descricao="Descrição do Projeto 2">
-                    <div class="projeto-imagem" style="background-image: url('projeto2.jpg');"></div>
-                    <h3>Projeto 2</h3>
-                </div>
-                <div class="projeto-card" data-descricao="Descrição do Projeto 3">
-                    <div class="projeto-imagem" style="background-image: url('projeto3.jpg');"></div>
-                    <h3>Projeto 3</h3>
-                </div>
-                <div class="projeto-card" data-descricao="Descrição do Projeto 4">
-                    <div class="projeto-imagem" style="background-image: url('projeto4.jpg');"></div>
-                    <h3>Projeto 4</h3>
-                </div>
+        <div class="carrossel">
+            <div class="projeto-card" data-descricao-id="desc-queimadas">
+                <div class="projeto-imagem" style="background-image: url('static/imgs/queimadas.jpg');"></div>
+                <h3>Programa Queimas Foco 10</h3>
+                <p>INPE - Instituto Nacional de Pesquisas Espaciais<br>Função: Analista C&T - Biomas BR CNPq</p>
             </div>
-            <div class="descricao-projeto">
-                <p>Clique em um projeto para ver os detalhes.</p>
+            <div class="projeto-card" data-descricao-id="desc-lsst">
+                <div class="projeto-imagem" style="background-image: url('static/imgs/lsst.jpg');"></div>
+                <h3>Observatório Vera Cooper Rubin</h3>
+                <p>BPG/LSST Brazilian Participation Group<br>Pesquisador de Pós-graduação - INCT CNPq</p>
             </div>
+            <div class="projeto-card" data-descricao-id="desc-radioobservatorio">
+                <div class="projeto-imagem" style="background-image: url('static/imgs/radiobservatorio.jpg');"></div>
+                <h3>Rádio Observatório Pierre Kauffmann</h3>
+                <p>INPE - Instituto Nacional de Pesquisas Espaciais<br>Aluno de Pós-graduação - Temático Fapesp</p>
+            </div>
+            <div class="projeto-card" data-descricao-id="desc-ic-inpe">
+                <div class="projeto-imagem" style="background-image: url('static/imgs/aerossol.png');"></div>
+                <h3>Técnicas de Reamostragem e Registro</h3>
+                <p>INPE - Instituto Nacional de Pesquisas Espaciais<br>Bolsista de Iniciação Científica - CNPq</p>
+            </div>
+            <div class="projeto-card" data-descricao-id="desc-ic-fatec">
+                <div class="projeto-imagem" style="background-image: url('static/imgs/flor.png');"></div>
+                <h3>Processamento de Imagens</h3>
+                <p>FATEC - Faculdade do Estado de São Paulo<br>Bolsista de Monitoria em Iniciação Científica - CPS</p>
+            </div>
+            <div class="projeto-card" data-descricao-id="desc-ic-impa">
+                <div class="projeto-imagem" style="background-image: url('static/imgs/fractal.jpg');"></div>
+                <h3>Pesquisa em Ensino de Matemática Pura</h3>
+                <p>IMPA - Instituto de Matemática Pura e Aplicada<br>Aluno de Iniciação Científica - CNPq</p>
+            </div>
+        </div>
+        <div class="descricao-projeto-expandida">
+            <p>
+                O Programa Queimas Foco 10 é uma iniciativa do INPE voltada para o monitoramento de queimadas.
+                Este projeto processa imagens do satélite GOES-16 a cada 10 minutos, fornecendo dados quase em tempo
+                real para monitorar incêndios no Brasil.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Atuo como Analista C&T do Foco 10.
+                <br><strong>Contribuições:</strong> Desenvolvimento de software de detecção, coleta de telemetria e
+                criação da interface gráfica para o gerenciamento do processo.
+            </p>
+            <a href="https://terrabrasilis.dpi.inpe.br/queimadas/portal/" target="_blank">Visite o site oficial</a>
         </div>
     </section>
 
+    <div id="descricao-detalhes" style="display: none;">
+        <div id="desc-queimadas">
+            <h3>Programa Queimas Foco 10</h3>
+            <p>
+                O Programa Queimas Foco 10 é uma iniciativa do INPE voltada para o monitoramento de queimadas.
+                Este projeto processa imagens do satélite GOES-16 a cada 10 minutos, fornecendo dados quase em tempo
+                real para monitorar incêndios no Brasil.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Atuo como Analista C&T do Foco 10.
+                <br><strong>Contribuições:</strong> Desenvolvimento de software de detecção, coleta de telemetria e
+                criação da interface gráfica para o gerenciamento do processo.
+            </p>
+            <a href="https://terrabrasilis.dpi.inpe.br/queimadas/portal/" target="_blank">Visite o site oficial</a>
+        </div>
+
+        <div id="desc-lsst">
+            <h3>Observatório Vera Cooper Rubin</h3>
+            <p>
+                O LSST realiza levantamentos astronômicos em larga escala, contribuindo para estudos relacionados à
+                cosmologia, como a compreensão da matéria escura,
+                o mapeamento da Via Láctea e outros fenômenos de grande escala no universo.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Pesquisador de pós-graduação.
+                <br><strong>Contribuições:</strong> Classificação morfológica de galáxias de alto redshift.
+            </p>
+            <a href="https://www.lsst.org/" target="_blank">Visite o site oficial</a>
+        </div>
+
+        <div id="desc-radioobservatorio">
+            <h3>Rádio Observatório Pierre Kauffmann</h3>
+            <p>
+                Este projeto foca na investigação de objetos astronômicos em frequências de rádio, com ênfase na
+                observação de quasares e outros fenômenos relacionados.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Aluno de pós-graduação.
+                <br><strong>Contribuições:</strong> Processamento de sinais de radioastronomia para remover ruídos em
+                cenários de baixíssima relação sinal-ruído (SNR).
+            </p>
+            <a href="https://www.gov.br/inpe/pt-br/area-conhecimento/engenharia-e-ciencias-espaciais/radio-observatorio"
+                target="_blank">Visite o site oficial</a>
+        </div>
+
+        <div id="desc-ic-inpe">
+            <h3>Estudo das Técnicas de Reamostragem e Registro</h3>
+            <p>
+                Este projeto explora como métodos de reamostragem e registro podem ser usados para compatibilizar
+                imagens de diferentes satélites, considerando
+                resoluções espaciais variadas.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Bolsista de iniciação científica.
+                <br><strong>Contribuições:</strong> Análise e desenvolvimento de componentes de processamento para
+                técnicas de reamostragem, registro e detecção de padrões.
+            </p>
+            <a href="https://www.inpe.br/" target="_blank">Visite o site oficial</a>
+        </div>
+
+        <div id="desc-ic-fatec">
+            <h3>Processamento de Imagens e Visão Computacional</h3>
+            <p>
+                Projeto dedicado ao desenvolvimento de algoritmos para reamostragem de imagens e análise de como
+                diferentes métodos impactam a identificação de padrões visuais.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Bolsista de monitoria em iniciação científica.
+                <br><strong>Contribuições:</strong> Análise e desenvolvimento de componentes de processamento baseados
+                em técnicas modernas de visão computacional.
+            </p>
+            <a href="https://www.fatec.sp.gov.br/" target="_blank">Visite o site oficial</a>
+        </div>
+
+        <div id="desc-ic-impa">
+            <h3>Pesquisa em Ensino de Matemática Pura</h3>
+            <p>
+                Pesquisa aplicada ao ensino de tópicos avançados em álgebra e topologia, com foco em expandir a
+                compreensão sobre equações geométricas e topológicas.
+            </p>
+            <p>
+                <strong>Minha colaboração:</strong> Aluno de iniciação científica.
+                <br><strong>Contribuições:</strong> Provas de equações geométricas e topológicas em diferentes espaços
+                matemáticos.
+            </p>
+            <a href="https://impa.br/" target="_blank">Visite o site oficial</a>
+        </div>
+    </div>
 
     <section id="publicacoes" class="section">
         <h2>Publicações</h2>
-        <div class="centralizar">
-            <p>Detalhes sobre artigos, livros e outras contribuições científicas.</p>
-            <div class="carrossel">
-                <div class="publicacao-card" data-descricao="Descrição da Publicação 1">
-                    <div class="publicacao-imagem" style="background-image: url('publicacao1.jpg');"></div>
-                    <h3>Publicação 1</h3>
-                </div>
-                <div class="publicacao-card" data-descricao="Descrição da Publicação 2">
-                    <div class="publicacao-imagem" style="background-image: url('publicacao2.jpg');"></div>
-                    <h3>Publicação 2</h3>
-                </div>
-                <div class="publicacao-card" data-descricao="Descrição da Publicação 3">
-                    <div class="publicacao-imagem" style="background-image: url('publicacao3.jpg');"></div>
-                    <h3>Publicação 3</h3>
-                </div>
-                <!-- Adicione mais publicações conforme necessário -->
+        <div class="carrossel">
+            <div class="publicacao-card" data-descricao-id="desc-publicacao1">
+                <div class="publicacao-imagem" style="background-image: url('static/imgs/artigo1.png');"></div>
+                <h3>Análise Quantitativa de Métodos de Reamostragem - 2023</h3>
+                <p>Autor: Carlos Eduardo Falandes, Fabrício Galende Marques</p>
             </div>
-            <div class="descricao-publicacao">
-                <p>Clique em uma publicação para ver os detalhes.</p>
+            <div class="publicacao-card" data-descricao-id="desc-publicacao2">
+                <div class="publicacao-imagem" style="background-image: url('static/imgs/flor.png');"></div>
+                <h3>Implementação de técnicas de reamostragem - 2022</h3>
+                <p>Autor: Carlos Eduardo Falandes, Fabrício Galende Marques</p>
             </div>
+            <div class="publicacao-card" data-descricao-id="desc-publicacao3">
+                <div class="publicacao-imagem" style="background-image: url('static/imgs/artigo3.png');"></div>
+                <h3>Algoritmo de Detecção de Cantos Aplicado ao Registro - 2024</h3>
+                <p>Autor: Carlos Eduardo Falandes, Fabrício Galende Marques, Fabiano Morelli</p>
+            </div>
+            <div class="publicacao-card" data-descricao-id="desc-publicacao4">
+                <div class="publicacao-imagem" style="background-image: url('static/imgs/artigo4.png');"></div>
+                <h3>Técnicas de Reamostragem e Registro de Imagens Digitais - 2024</h3>
+                <p>Autor: Carlos Eduardo Falandes, Fabrício Galende Marques</p>
+            </div>
+            <div class="publicacao-card" data-descricao-id="desc-publicacao5">
+                <div class="publicacao-imagem" style="background-image: url('static/imgs/artigo5.png');"></div>
+                <h3>Técnicas de Reamostragem e Registro de Imagens Digitais - 2023</h3>
+                <p>Autor: Carlos Eduardo Falandes, Fabrício Galende Marques</p>
+            </div>
+        </div>
+        <div class="descricao-publicacao-expandida">
+            <h3>Análise Quantitativa de Métodos de Reamostragem</h3>
+            <p>
+                Publicado nos Anais da XI ERI-GO (2023).
+            </p>
+            Avaliação de métodos de reamostragem (Vizinho Mais Próximo, Bilinear e Bicúbica) quanto ao impacto na
+            qualidade de contornos geométricos. A análise utilizou métricas como PSNR, MSE e Correlação para ilustrar
+            como diferentes técnicas afetam a precisão de registros de imagens.
         </div>
     </section>
 
+    <div id="descricao-detalhes" style="display: none;">
+        <div id="desc-publicacao1">
+            <h3>Análise Quantitativa de Métodos de Reamostragem</h3>
+            <p>
+                Publicado nos Anais da XI ERI-GO (2023).
+            </p>
+            Avaliação de métodos de reamostragem (Vizinho Mais Próximo, Bilinear e Bicúbica) quanto ao impacto na
+            qualidade de contornos geométricos. A análise utilizou métricas como PSNR, MSE e Correlação para ilustrar
+            como diferentes técnicas afetam a precisão de registros de imagens.
+        </div>
+        <div id="desc-publicacao2">
+            <h3>Técnicas de Reamostragem de Imagens Digitais</h3>
+            <p>
+                Encontro do Programa de Monitoria nas Fatecs (2023).
+            </p>
+            Comparação entre Vizinho Mais Próximo e Bilinear mostrou que o primeiro preserva limites, mas gera
+            serrilhamento, enquanto o segundo oferece suavidade e transições de cor mais fiéis, porém a um custo
+            computacional mais elevado.
+        </div>
+        <div id="desc-publicacao3">
+            <h3>Detecção de Cantos no Registro de Imagens</h3>
+            <p>
+                Publicado na Science & Business Connection (2024).
+            </p>
+            Implementação do algoritmo Harris para detectar cantos em regiões de variação de intensidade. Outliers foram
+            eliminados com RANSAC, e a Transformação Afim foi utilizada para corrigir distorções (escala, rotação e
+            translação) de forma eficiente.
+        </div>
+        <div id="desc-publicacao4">
+            <h3>Técnicas de Reamostragem e Registro</h3>
+            <p>
+                Seminário de Iniciação Científica (2024).
+            </p>
+            Estudo de reamostragem (Vizinho Mais Próximo, Bilinear e Bicúbica) e registro (Harris e Correlação Cruzada).
+            Bicúbica teve melhor qualidade visual, enquanto Vizinho Mais Próximo apresentou menor impacto no registro,
+            mesmo com menor qualidade visual.
+        </div>
+        <div id="desc-publicacao5">
+            <h3>Técnicas de Reamostragem e Registro</h3>
+            <p>
+                Seminário de Iniciação Científica (2023).
+            </p>
+            Implementação de Vizinho Mais Próximo e Bilinear mostrou que o primeiro é rápido, mas perde detalhes,
+            enquanto o segundo oferece maior qualidade visual com maior custo computacional. O projeto continua
+            explorando métodos mais avançados e quantitativos.
+        </div>
+    </div>
 
     <section id="complementar" class="section">
         <h2>Atividades Complementares</h2>
@@ -169,32 +359,167 @@
             <div class="complementar-container">
                 <div class="complementar-item">
                     <div class="complementar-icone">
-                        <img src="curso1-icon.png" alt="Ícone Curso 1">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-book"></i>
+                        </a>
                     </div>
                     <div class="complementar-detalhes">
-                        <h3>Curso de Desenvolvimento Web</h3>
-                        <p>Aprendizado intensivo sobre HTML, CSS, JavaScript e frameworks modernos.</p>
+                        <h3>CAP-422-3 Física Matemática Computacional</h3>
+                        <p>Aluno Especial. Carga horária: 60h. Instituto Nacional de Pesquisas Espaciais (INPE), Brasil.
+                            2024.</p>
                     </div>
                 </div>
                 <div class="complementar-item">
                     <div class="complementar-icone">
-                        <img src="premio-icon.png" alt="Ícone Premiação">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-chart-bar"></i>
+                        </a>
                     </div>
                     <div class="complementar-detalhes">
-                        <h3>Premiação em Inovação</h3>
-                        <p>Reconhecimento pelo desenvolvimento de uma solução sustentável para edificações.</p>
+                        <h3>Fundamentals of System Modelling</h3>
+                        <p>Extensão universitária. Carga horária: 12h. Instituto Nacional de Pesquisas Espaciais (INPE),
+                            Brasil. 2024.</p>
                     </div>
                 </div>
                 <div class="complementar-item">
                     <div class="complementar-icone">
-                        <img src="curso2-icon.png" alt="Ícone Curso 2">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-atom"></i>
+                        </a>
                     </div>
                     <div class="complementar-detalhes">
-                        <h3>Curso de Machine Learning</h3>
-                        <p>Estudo prático de algoritmos de aprendizado supervisionado e não supervisionado.</p>
+                        <h3>XVII Encontro de Física do ITA</h3>
+                        <p>Extensão universitária. Carga horária: 35h. Instituto Tecnológico de Aeronáutica (ITA),
+                            Brasil. 2024.</p>
                     </div>
                 </div>
-                <!-- Adicione mais itens conforme necessário -->
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-database"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Ciência de Dados</h3>
+                        <p>Carga horária: 10h. Academy POD, Brasil. 2024.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>A mecânica, o eletromagnetismo e a relatividade</h3>
+                        <p>Carga horária: 8h. Universidade de São Paulo (USP), Brasil. 2024.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-map-marked-alt"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Oficina de Trabalho Base de Informações Georreferenciadas</h3>
+                        <p>Carga horária: 50h. Brazil Data Cube, Instituto Nacional de Pesquisas Espaciais (INPE),
+                            Brasil. 2024.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-star"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>XXIII Curso de Introdução à Astronomia e Astrofísica - CIAA</h3>
+                        <p>Carga horária: 38h. Instituto Nacional de Pesquisas Espaciais (INPE), Brasil. 2023.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-pencil-ruler"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>UX Básico</h3>
+                        <p>Carga horária: 240h. Faculdade de Tecnologia do Estado de São Paulo (FATEC), Brasil. 2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Curso de Comunicação e Escrita Científica</h3>
+                        <p>Carga horária: 5h. American Chemical Society, Estados Unidos. 2023.</p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Design Patterns Básico</h3>
+                        <p>Carga horária: 240h. Faculdade de Tecnologia do Estado de São Paulo (FATEC), Brasil. 2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-desktop"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Front-End Básico</h3>
+                        <p>Carga horária: 240h. Faculdade de Tecnologia do Estado de São Paulo (FATEC), Brasil. 2022.
+                        </p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Desenvolvedor Front-End</h3>
+                        <p>Carga horária: 640h. Faculdade de Tecnologia do Estado de São Paulo (FATEC), Brasil. 2022.
+                        </p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-award"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Trabalho de Iniciação Científica</h3>
+                        <p>Classificado entre os 20 melhores do estado de São Paulo - Centro Paula Souza (CPS). 2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="complementar-item">
+                    <div class="complementar-icone">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-medal"></i>
+                        </a>
+                    </div>
+                    <div class="complementar-detalhes">
+                        <h3>Menção Honrosa OBMEP</h3>
+                        <p>Instituto de Matemática Pura e Aplicada (IMPA). 2021.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -204,31 +529,19 @@
         <h2>Contato</h2>
         <div class="centralizar">
             <p>Entre em contato ou acesse mais sobre meu trabalho:</p>
-            <div class="contato-container">
-                <div class="contato-item">
-                    <div class="contato-icone">
-                        <img src="email-icon.png" alt="Ícone de Email">
-                    </div>
-                    <p><a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
-                </div>
-                <div class="contato-item">
-                    <div class="contato-icone">
-                        <img src="github-icon.png" alt="Ícone do GitHub">
-                    </div>
-                    <p><a href="https://github.com/seuperfil" target="_blank">github.com/seuperfil</a></p>
-                </div>
-                <div class="contato-item">
-                    <div class="contato-icone">
-                        <img src="instagram-icon.png" alt="Ícone do Instagram">
-                    </div>
-                    <p><a href="https://instagram.com/seuperfil" target="_blank">@seuperfil</a></p>
-                </div>
-                <div class="contato-item">
-                    <div class="contato-icone">
-                        <img src="lattes-icon.png" alt="Ícone do Lattes">
-                    </div>
-                    <p><a href="http://lattes.cnpq.br/seulattes" target="_blank">Currículo Lattes</a></p>
-                </div>
+            <div class="redes">
+                <a href="mailto:carlos.falandes@inpe.br.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Desduh" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/falandes.jpeg/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="http://lattes.cnpq.br/3579183651868833" target="_blank">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -249,28 +562,62 @@
                             elemento.style.borderRight = 'none';
                         }, 500);
                     }
-                }, 80 * i);
+                }, 25 * i);
             });
         }
 
         const titulo = document.querySelector('.text-effect');
         typeWrite(titulo);
-
         document.querySelectorAll('.projeto-card').forEach(card => {
             card.addEventListener('click', () => {
-                const descricao = card.getAttribute('data-descricao');
-                const descricaoDiv = document.querySelector('.descricao-projeto');
-                descricaoDiv.innerHTML = `<p>${descricao}</p>`;
+                const descricaoId = card.getAttribute('data-descricao-id');
+                const descricaoDetalhada = document.querySelector(`#descricao-detalhes #${descricaoId}`);
+
+                const descricaoContainer = document.querySelector('.descricao-projeto-expandida');
+
+                // Substituir conteúdo da descrição expandida
+                if (descricaoDetalhada) {
+                    descricaoContainer.innerHTML = descricaoDetalhada.innerHTML;
+                } else {
+                    descricaoContainer.innerHTML = "<p>Detalhes indisponíveis para este projeto.</p>";
+                }
             });
         });
 
         document.querySelectorAll('.publicacao-card').forEach(card => {
             card.addEventListener('click', () => {
-                const descricao = card.getAttribute('data-descricao');
-                const descricaoDiv = document.querySelector('.descricao-publicacao');
-                descricaoDiv.innerHTML = `<p>${descricao}</p>`;
+                const descricaoId = card.getAttribute('data-descricao-id');
+                const descricaoDetalhada = document.querySelector(`#descricao-detalhes #${descricaoId}`);
+                const descricaoContainer = document.querySelector('.descricao-publicacao-expandida');
+
+                if (descricaoDetalhada) {
+                    descricaoContainer.innerHTML = descricaoDetalhada.innerHTML;
+                } else {
+                    descricaoContainer.innerHTML = "<p>Detalhes indisponíveis para esta publicação.</p>";
+                }
             });
         });
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menuDropdown = document.querySelector('.menu-dropdown');
+
+            menuIcon.addEventListener('click', () => {
+                // Alterna a classe "show" para exibir ou ocultar o menu
+                if (menuDropdown.classList.contains('show')) {
+                    menuDropdown.classList.remove('show'); // Fecha o menu
+                } else {
+                    menuDropdown.classList.add('show'); // Abre o menu
+                }
+            });
+
+            // Fecha o menu ao clicar fora dele
+            document.addEventListener('click', (event) => {
+                if (!menuDropdown.contains(event.target) && !menuIcon.contains(event.target)) {
+                    menuDropdown.classList.remove('show');
+                }
+            });
+        });
+
     </script>
 </body>
 
